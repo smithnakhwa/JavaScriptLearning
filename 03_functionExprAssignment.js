@@ -31,3 +31,19 @@ var string= function(name){
     console.log("the length of the string is:",name.length,"and it's Square is:",(name.length)*(name.length));
 }
 string("JS the most popular language");
+var indexOfNin="         GoodyMorning         ";
+console.log("Index of subString nin:",indexOfNin.indexOf("nin"));
+console.log(indexOfNin.replace("Mor","after"));
+console.log("before trim length:",indexOfNin.length);
+var anem=indexOfNin.trim();
+console.log("trim()",anem.length);
+var result=anem.slice(0,3);
+console.log(result);
+result=anem.slice(4);
+console.log(result);
+result=anem.slice(-7,-2);
+console.log(result); 
+var split="smith,hero,tyb,y7bybgy,gbgyb";
+var splitname=split.split("y");
+console.log(splitname);
+var sentence=""

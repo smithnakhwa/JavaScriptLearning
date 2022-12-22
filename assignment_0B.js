@@ -13,6 +13,38 @@ for (let index = 5; index <= 50; index=index+5) {
       console.log(index);
     
 }
+console.log(`=================First 15 Odd number===============`)
+var i=1;
+var count=0;
+for (;;)
+{
+    if(i%2!==0)
+    {
+        console.log(i);
+        count++;
+    }
+    if(count==15)
+    {
+        break;
+    }
+    i++;
+}
+console.log(`=================First 10 even number===============`)
+var i=1;
+var count=0;
+for (;;)
+{
+    if(i%2==0)
+    {
+        console.log(i);
+        count++;
+    }
+    if(count==10)
+    {
+        break;
+    }
+    i++;
+}
 console.log(`=============Tabele Of 10===========`);
 for (let index = 10; index <= 100; index=index+10) {
       console.log(index);

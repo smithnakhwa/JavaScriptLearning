@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate</title>
+        <style>
+            label{
+                padding-right: 5px;
+            }
+        </style>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label>1<sup>st</sup> Number :</label></td>
+                    <td><input id="var1"  type="number" autofocus required ></td>
+               </tr>
+            <tr>
+                <td><label>2<sup>nd</sup> Number :</label></td>
+                <td><input type="number" required id="var2"></td>
+            </tr>
+            <tr>
+                <td><button onclick="multiply()" >Multiply</button></td>
+                <td><button type="submit" onclick="divide()">Divide</button></td>
+            </tr>
+            <tr>
+                 <td>The Result Is</td>
+            </tr>
+            <tr>
+              <td id="result"></td>
+            </tr>
+            </tbody>
+
+            <script>
+                function multiply()
+                {
+                   let result= (document.getElementById("var1").value)*(document.getElementById("var2").value);
+                   document.getElementById("result").innerHTML=result;
+                   console.log(document.getElementById("var1").innerHTML);
+                }
+                function divide()
+                {
+                   let result= (document.getElementById("var1").value)/(document.getElementById("var2").value);
+                   document.getElementById("result").innerHTML=result;
+                   console.log(document.getElementById("var1").innerHTML);
+                }
+            </script>
+        </table>
+    </body>
+</html>
